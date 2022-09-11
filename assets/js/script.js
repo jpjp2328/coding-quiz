@@ -247,7 +247,7 @@ function clearHighscores() {
 }
 
 
-// function to initial event listeners upon loading of the page
+// function to initialize event listeners upon loading of the page
 function init() {
     
     startBtn.addEventListener('click', startQuiz);
