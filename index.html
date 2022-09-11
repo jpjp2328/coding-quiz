@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <!--Header containing view higscore button and timer-->
+    <header>
+        <button id ="highScoresBtn">View Highscores</button>
+        <p>Time: <span id = "timer">0</span></p>
+    </header>
+    <!--Main containing the quiz's content including questions, answers and start button-->
+    <main>
+        <h1 id ="questionTitle">Coding Quiz</h1>
+        <p id = "intro">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 15 seconds!</p>
+        <button id ="startBtn">Start Quiz</button>
+        <ul>
+          <!--answers would be created by apprending <li> via JavaScript-->
+        </ul>
+        <!-- div that are hidden via css and would be displayed via js at the end of the quiz-->
+        <div id ="completedQuiz">
+            <h2>All done!</h2>
+            <p> Your final score is: <span id = "finalScore"></span>.</p>
+            
+            <div id = "inputInitials">
+              <p>Enter Initials:</p>
+              <input type ="text" id ="fname" name ="fname" value ="">
+              <button id ="submitInitialsBtn">Submit</button>
+            </div>
+
+        </div>
+
+        <!-- Highscore tally that would save users score and would be displayed when highscore button is pressed-->
+        <div id ="highScoreTally">
+          <h3>Highscores</h3>
+          <ol>
+            <!--list of highscores appear here appended via js-->
+          </ol>
+          <button id ="goBackBtn">Go Back</button>
+          <button id ="clearHighScoreBtn">Clear Highscores</button>
+        </div>
+    </main>
+
+
+    <script src="./assets/js/script.js"></script>
+
+  </body>
+
+</html>
