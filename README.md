@@ -64,7 +64,8 @@ THEN I can save my initials and my score
 - Questions and answers displayed properly
 
 ## Bugs/Extra
-- Doesnt display local data initals onto highscore after submiting intials (need fix)
+~~ - Doesnt display local data initals onto highscore after submiting intials (need fix) ~~
+- FIXED - typo on script.js:225:28 caused local data to not show up
 - Clean up Css for questions/answers and hover affect when hovering over answers. styling elements
 
 ## Final Product

@@ -222,7 +222,7 @@ function showHighscores() {
     tempArrayOfObjects = JSON.parse(window.localStorage.getItem('highScores'));
     if (tempArrayOfObjects != null) {
         for (let index = 0; index < tempArrayOfObjects.length; index++) {
-            var newScore = documenet.createElement('li')
+            var newScore = document.createElement('li')
             newScore.textContent = tempArrayOfObjects[index].names + ' - ' + tempArrayOfObjects[index].scores;
             tempOrderList.appendChild(newScore);
         }
